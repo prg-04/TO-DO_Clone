@@ -9,13 +9,13 @@
       crossorigin="anonymous"></script>
     <title><%=htmlWebpackPlugin.options.title %></title>
   </head>
-  <body>
-    <div id="container" class="container">
+  <body class="flexing">
+    <div id="container" class="container flexing">
       <div class="heading">
         <h3>Today's To Do</h3>
         <i class="fa-solid fa-arrows-rotate"></i>
       </div>
-      <form action="" id="form">
+      <form action="" id="form" class="flexing-center">
         <input id="input" type="text" placeholder="Add to your list..." />
         <button id="addBtn" class="addBtn" type="submit">
           <i class="fa-solid fa-plus"></i>
@@ -27,7 +27,7 @@
     </div>
 
      <template id="template" class="task-template">
-        <div class="list-item">
+        <div class="list-item flexing-center">
           <input type="checkbox" class="task-completed" />
           <input type="text" class="task-description" />
           <i class="fa-solid fa-ellipsis-vertical"></i>
